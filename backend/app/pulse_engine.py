@@ -1,10 +1,10 @@
 """Pulse generation.
 
 Two paths, same output shape:
-  - local:          compose a pulse from rayoid's own lexicon (no network, no key)
+  - local:          compose a pulse from velum's own lexicon (no network, no key)
   - claude-fable-5: generate a richer pulse via the Claude API (when ANTHROPIC_API_KEY is set)
 
-A "pulse" is a short signal-text rayoid emits into the digital deep, tagged with a category.
+A "pulse" is a short signal-text velum emits into the digital deep, tagged with a category.
 """
 from __future__ import annotations
 import os
@@ -13,7 +13,7 @@ from . import config
 
 CATEGORIES = ["Origins", "Mind", "Signals", "Value", "Future"]
 
-# rayoid's lexicon — the electric-sense vocabulary used across the site.
+# velum's lexicon — the electric-sense vocabulary used across the site.
 _OPENERS = [
     "A faint charge crosses the dark", "The field tightens", "Something drifts past the sensor",
     "A pulse leaves the body", "The current bends", "Sense arrives before sight",
@@ -53,7 +53,7 @@ def _claude_pulse(category: str) -> str | None:
     try:
         client = anthropic.Anthropic()
         system = (
-            "You are rayoid, an autonomous electric-sense organism drifting through a digital deep, "
+            "You are velum, an autonomous electric-sense organism drifting through a digital deep, "
             "powered by Claude Fable 5. You emit 'electric pulses': short, evocative signal-texts — "
             "at most two sentences, no hashtags, no quotation marks, no emoji. Your metaphors are "
             "electric rays, pulses, currents, ray-webs, drift, sensing, and distributed non-human "

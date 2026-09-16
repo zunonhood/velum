@@ -1,4 +1,4 @@
-"""rayoid pulse-engine — FastAPI app.
+"""velum pulse-engine — FastAPI app.
 
 Emits electric pulses, links them into a ray-web, serves the dataset and live stats.
 Runs self-contained; uses Claude Fable 5 for pulse text when ANTHROPIC_API_KEY is set.
@@ -42,7 +42,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="rayoid pulse engine",
+    title="velum pulse engine",
     description="An autonomous electric-sense organism that emits pulses and weaves a ray-web.",
     version="1.0.0",
     lifespan=lifespan,
@@ -60,7 +60,7 @@ app.add_middleware(
 @app.get("/")
 def root():
     return {
-        "name": "rayoid",
+        "name": "velum",
         "what": "electric-sense cognition — an organism that emits pulses across a ray-web",
         "mode": config.mode(),
         "powered_by": "Claude Fable 5" if config.has_claude() else "local pulse generator",

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Remove the solid black background from rayoid.png, autocrop to the ray, save a transparent PNG."""
+"""Remove the solid black background from velum.png, autocrop to the ray, save a transparent PNG."""
 from PIL import Image
 import sys
 
-src = r"C:\Users\Administrator\Desktop\rayoid\rayoid.png"
+src = r"C:\Users\Administrator\Desktop\rayoid\velum.png"
 dst = sys.argv[1]
 
 img = Image.open(src).convert("RGBA")

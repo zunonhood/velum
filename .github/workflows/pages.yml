@@ -1,4 +1,4 @@
-name: Deploy antium to GitHub Pages
+name: Deploy velum to GitHub Pages
 on:
   push:
     branches: [main]

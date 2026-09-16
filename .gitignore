@@ -22,3 +22,8 @@ tracks_rayoid.png
 .claude/
 .idea/
 .vscode/
+*.out.log
+*.err.log
+*.stdout.log
+*.stderr.log
+live_*.png

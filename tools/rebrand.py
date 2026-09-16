@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Rebrand all pages from mycoid -> rayoid: favicon, title, og/twitter image + title."""
+"""Rebrand all pages from mycoid -> velum: favicon, title, og/twitter image + title."""
 import re, glob
 
 OLD_ICON = "/_assets/framerusercontent.com/images/VABonYO2hqDfa712352Jg7kYUU.png"
-ICON = "/_assets/rayoid/rayoid-icon.png"
-SHARE = "/_assets/rayoid/rayoid-share.png"
+ICON = "/_assets/velum/velum-icon.png"
+SHARE = "/_assets/velum/velum-share.png"
 
 pages = glob.glob("site/**/*.html", recursive=True)
 for p in pages:
@@ -21,9 +21,9 @@ for p in pages:
     # any leftover reference to the old icon asset -> new icon
     s = s.replace(OLD_ICON, ICON)
 
-    # title + og/twitter title: mycoid -> rayoid (only the exact brand token)
-    s = s.replace("<title>mycoid</title>", "<title>rayoid</title>")
-    s = s.replace('content="mycoid"', 'content="rayoid"')
+    # title + og/twitter title: mycoid -> velum (only the exact brand token)
+    s = s.replace("<title>mycoid</title>", "<title>velum</title>")
+    s = s.replace('content="mycoid"', 'content="velum"')
 
     if s != orig:
         open(p, "w", encoding="utf-8").write(s)

@@ -7,7 +7,7 @@ FILES = [
                  "4GgFjAnjYT1KMBZEvvLhvC",
                  "hNGLef-ywOXWB9cjddW73xsLN1--dYzlYPbyP45H0gE.CYvtoMPA.mjs"),
 ]
-OLD = "an electric organism gliding across Solana that refuses to hold still."
+OLD = "an electric organism gliding across Arc that refuses to hold still."
 NEW = "an electric organism powered by Claude Fable 5 that refuses to hold still."
 for p in FILES:
     if not os.path.exists(p + ".orig"):

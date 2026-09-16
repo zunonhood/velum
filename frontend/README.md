@@ -1,6 +1,6 @@
-# rayoid — frontend
+# velum — frontend
 
-The rayoid site: a self-contained static site that runs fully offline.
+The velum site: a self-contained static site that runs fully offline.
 
 ## Run
 
@@ -16,7 +16,7 @@ Then open **http://127.0.0.1:8848/**.
 
 ## Pages
 
-- **/** — homepage: who rayoid is, live stats, and the docs preview
+- **/** — homepage: who velum is, live stats, and the docs preview
 - **/tracks** — the **Pathways** roadmap (Pulse Emergence → Current Expansion → Web Formation)
 - **/docs** — five essays reading the project from signals to networks, plus each essay's detail page
 

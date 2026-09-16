@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Build rayoid brand assets from rayoid.png: transparent centered favicon (PNG+ICO) and a social share image."""
+"""Build velum brand assets from velum.png: transparent centered favicon (PNG+ICO) and a social share image."""
 from PIL import Image
 
-SRC = "rayoid.png"
-OUT_DIR = "site/_assets/rayoid"
+SRC = "velum.png"
+OUT_DIR = "site/_assets/velum"
 
 import os
 os.makedirs(OUT_DIR, exist_ok=True)
@@ -37,17 +37,17 @@ canvas.paste(cropped, ((canvas_side - cw) // 2, (canvas_side - ch) // 2), croppe
 
 # 4) Favicon master 512x512 (transparent)
 fav = canvas.resize((512, 512), Image.LANCZOS)
-fav.save(os.path.join(OUT_DIR, "rayoid-icon.png"))
+fav.save(os.path.join(OUT_DIR, "velum-icon.png"))
 
 # 5) Multi-size .ico
-fav.save(os.path.join(OUT_DIR, "rayoid.ico"),
+fav.save(os.path.join(OUT_DIR, "velum.ico"),
          sizes=[(16, 16), (32, 32), (48, 48), (64, 64), (128, 128), (256, 256)])
 
-# 6) Social share image (og/twitter): 1200x630, dark bg to match site, rayoid centered
+# 6) Social share image (og/twitter): 1200x630, dark bg to match site, velum centered
 share = Image.new("RGBA", (1200, 630), (8, 8, 12, 255))
 logo = canvas.resize((430, 430), Image.LANCZOS)
 share.alpha_composite(logo, ((1200 - 430) // 2, (630 - 430) // 2))
-share.convert("RGB").save(os.path.join(OUT_DIR, "rayoid-share.png"))
+share.convert("RGB").save(os.path.join(OUT_DIR, "velum-share.png"))
 
 print("bbox", bbox, "cropped", cropped.size, "-> icon 512, ico multi, share 1200x630")
 print("DONE")
