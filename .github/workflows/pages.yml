@@ -18,8 +18,10 @@ jobs:
       - uses: actions/configure-pages@v5
         with:
           enablement: true
+      - name: Prepare project Pages paths
+        run: python tools/prepare_pages.py
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: frontend/site
+          path: .pages
       - id: deployment
         uses: actions/deploy-pages@v4
