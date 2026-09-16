@@ -27,4 +27,3 @@ tracks_rayoid.png
 *.stdout.log
 *.stderr.log
 live_*.png
-.pages/

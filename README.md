@@ -6,7 +6,7 @@
 
 **Electric-sense cognition, framed through ray webs.**
 
-[![Repository](https://img.shields.io/badge/repository-arcworkarc%2Fvelum-006aff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/arcworkarc/velum)
+[![Website](https://img.shields.io/badge/website-velumx.fun-006aff?style=for-the-badge&logo=safari&logoColor=white)](https://velumx.fun)
 [![X](https://img.shields.io/badge/follow-@velumswarm-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/velumswarm)
 [![Powered by Claude Fable 5](https://img.shields.io/badge/powered_by-Claude_Fable_5-d97757?style=for-the-badge&logo=anthropic&logoColor=white)](https://claude.com)
 [![License: MIT](https://img.shields.io/badge/license-MIT-1cbd04?style=for-the-badge)](LICENSE)
